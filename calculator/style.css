@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+#calc {
+    width: 400px;
+    padding: 10px;
+    background-color: #d1d1d1;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#calc h3 {
+    font-size: 13px;
+    font-weight: 300;
+    color: #4d4d4d;
+}
+
+#opera {
+    text-align: right;
+}
+
+#previous-opera {
+    color: #575757;
+    padding: 6px;
+    overflow-wrap: break-word;
+    min-height: 30px;
+}
+
+#current-opera {
+    min-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 80px;
+    font-size: 20px;
+    background-color: #dbdbdb;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#buttons-container .numero {
+    background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+    background-color: #bababa;
+    border-color: #979696;
+}
+
+#buttons-container #igual {
+    grid-column: span 2;
+    background-color: #e2ba4b;
+}
+
+#buttons-container #igual:hover {
+    background-color: #ac8a2d;
+}
